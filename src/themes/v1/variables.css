@@ -4,12 +4,15 @@
 
 :root {
   /* ========== COLORS ========== */
-  /* Primary Colors */
-  --color-primary: #070519;
-  --color-secondary: #FAA31A;
+  /* Primary Colors — Inland Injury / Empire Attorneys palette
+   * Source: Supabase clients.brand_guidelines for client
+   * 9c904e18-e8d8-4618-ae64-e2297401679d (teal + peach/coral,
+   * scraped from empireatty.com CDN lawkit home-rT4fseEe.css). */
+  --color-primary: #05515F;    /* teal */
+  --color-secondary: #E7A578;  /* peach */
 
   /* Accent & Neutral Colors */
-  --color-accent: #c9c9c9;
+  --color-accent: #DF884D;     /* coral */
   --color-background: #ffffff;
   --color-foreground: #000000;
 

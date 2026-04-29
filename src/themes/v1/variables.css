@@ -1,38 +1,42 @@
 /* ============================================
    CSS VARIABLES - PODCAST TEMPLATE
+   Deborah Song / Inland Empire palette
+   Primary #05515F deep teal | Secondary #DDA87F warm peach | Accent #05515F
+   Source: Figma "Podcast" Brand Colors swatches (cbIpoxLbRcs0OVEmcaO0VD)
    ============================================ */
 
 :root {
   /* ========== COLORS ========== */
-  /* Primary Colors — Inland Injury / Empire Attorneys palette
-   * Source: Supabase clients.brand_guidelines for client
-   * 9c904e18-e8d8-4618-ae64-e2297401679d (teal + peach/coral,
-   * scraped from empireatty.com CDN lawkit home-rT4fseEe.css). */
-  --color-primary: #05515F;    /* teal */
-  --color-secondary: #E7A578;  /* peach */
+  /* Primary Colors */
+  --color-primary: #05515F;
+  --color-primary-hover: #043F4A;
+  --color-primary-deep: #032B33;
+  --color-secondary: #DDA87F;
+  --color-secondary-hover: #C99268;
+  --color-secondary-deep: #B37C56;
 
   /* Accent & Neutral Colors */
-  --color-accent: #DF884D;     /* coral */
+  --color-accent: #05515F;
   --color-background: #ffffff;
-  --color-foreground: #000000;
+  --color-foreground: #05515F;
 
   /* Muted Colors */
-  --color-muted: #f1f2f4;
+  --color-muted: #f5f5f7;
   --color-muted-foreground: #676767;
 
   /* Card Colors */
   --color-card: #eeeef0;
-  --color-card-foreground: #151823;
+  --color-card-foreground: #05515F;
 
   /* Border & Divider */
   --color-border: #d9d9d9;
 
   /* Additional UI Colors */
-  --color-gray-dark: #6f6f6f;
+  --color-gray-dark: #353535;
   --color-gray-light: #9e9e9e;
   --color-gray-lighter: #616161;
   --color-beige: #e1dddc;
-  --color-dark-bg: #070519;
+  --color-dark-bg: #05515F;
 
   /* ========== TYPOGRAPHY ========== */
   --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;

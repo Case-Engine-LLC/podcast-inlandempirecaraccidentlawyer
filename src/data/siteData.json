@@ -2,6 +2,7 @@
   "siteConfig": {
     "podcastName": "Empire Law Firm with Deborah Song",
     "tagline": "NEW EPISODE",
+    "podcastUrl": "https://podcast-inlandempirecaraccidentlawyer.vercel.app",
     "platformLinks": {
       "apple": "#",
       "spotify": "#"

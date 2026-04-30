@@ -1,0 +1,21 @@
+{
+  "name": "Empire Law Firm with Deborah Song",
+  "short_name": "Empire Attorneys",
+  "description": "Inland Empire personal injury podcast hosted by Deborah Song of Empire Attorneys (dba Inland Injury) — California car accident, property damage, and UM/UIM coverage explained.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05515F",
+  "theme_color": "#05515F",
+  "icons": [
+    {
+      "src": "/icon",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-icon",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

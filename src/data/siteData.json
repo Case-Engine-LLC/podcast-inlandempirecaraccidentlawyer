@@ -10,16 +10,14 @@
     "formCTA": {
       "text": "Free Consultation",
       "href": "#contact"
-    },
-    "firmUrl": "https://www.empireatty.com"
+    }
   },
   "episode": {
     "number": 1,
     "title": "The YOU Interview with Deborah Song",
     "date": "04.23.26",
     "duration": "01:29:00",
-    "description": "Before you hire a personal injury lawyer in the Inland Empire, you should know who they really are. In this debut episode, Abby Arnold sits down with Deborah Song, founder of Inland Injury (dba of Empire Attorneys), for an unfiltered conversation about her path from middle-school political ambitions in the Inland Empire to becoming a Super Lawyers Rising Star and the only personal injury attorney operating full-time in Norco and Eastvale. Deborah shares her philosophy on client-first case strategy, why her firm pursues diminution-in-value and loss-of-use damages most firms skip, how she decides between negotiation and litigation, and why she's watching the Uber-backed California legislative push to cap contingency fees.",
-    "youtubeUrl": ""
+    "description": "Before you hire a personal injury lawyer in the Inland Empire, you should know who they really are. In this debut episode, Abby Arnold sits down with Deborah Song, founder of Inland Injury (dba of Empire Attorneys), for an unfiltered conversation about her path from middle-school political ambitions in the Inland Empire to becoming a Super Lawyers Rising Star and the only personal injury attorney operating full-time in Norco and Eastvale. Deborah shares her philosophy on client-first case strategy, why her firm pursues diminution-in-value and loss-of-use damages most firms skip, how she decides between negotiation and litigation, and why she's watching the Uber-backed California legislative push to cap contingency fees."
   },
   "attorney": {
     "name": "Deborah Song",
@@ -27,14 +25,14 @@
     "title": "Founder & Personal Injury Trial Attorney",
     "bio": [
       "Deborah Song founded Empire Attorneys (doing business as Inland Injury) to bring Orange County-style personal injury representation back to the Inland Empire. She was born and raised in Moreno Valley, earned her B.A. from UC Riverside, and finished her J.D. at Western State University College of Law in Irvine while working full-time at Orange County personal injury trial firms. She is licensed by the State Bar of California (Bar No. 337172).",
-      "The firm handles personal injury matters across California, primarily car, truck, motorcycle, and pedestrian accidents, plus premises liability, wrongful death, and catastrophic injury cases, from offices in Eastvale and Norco. Deborah is, by her own count, the only full-time personal injury attorney practicing in Norco and Eastvale. She's a Super Lawyers Rising Star (peer-nominated), a member of the Hispanic Bar Association of the Inland Empire and the Mexican Bar Association, and Secretary of the Norco Rotary Club.",
+      "The firm handles personal injury matters across California (primarily car, truck, motorcycle, and pedestrian accidents, plus premises liability, wrongful death, and catastrophic injury cases) from offices in Eastvale and Norco. Deborah is, by her own account, the only full-time personal injury attorney practicing in Norco and Eastvale. She's a Super Lawyers Rising Star (peer-nominated), a member of the Hispanic Bar Association of the Inland Empire and the Mexican Bar Association, and Secretary of the Norco Rotary Club.",
       "Deborah's firm is unusual in how aggressively it pursues property-damage-adjacent damages most personal injury firms ignore: diminution in value, loss of use, and GAP-insurance coordination. She has built a dedicated property-damage department because, in her words, 'making the client whole' has to include the market value the car loses the moment it's reported in a collision. Phillip B. Nghiem (Of Counsel, CA Bar #291525) joins her on select trial matters."
     ],
     "signature": "/images/signature.png",
     "photo": "/images/attorney.jpg"
   },
   "contact": {
-    "address": "Eastvale, California, serving the Inland Empire, Orange County, and statewide California",
+    "address": "Eastvale, California — serving the Inland Empire, Orange County, and statewide California",
     "phone": "(951) 456-3891",
     "email": "deborah@inlandinjury.com",
     "website": "https://inlandinjury.com"
@@ -135,7 +133,7 @@
         {
           "question": "What types of compensation can I recover in a California personal injury case?",
           "level": "h3",
-          "answer": "Economic damages (medical bills, lost wages, future care, property damage), non-economic damages (pain and suffering, emotional distress, loss of consortium), and, in cases of malice, oppression, or fraud, punitive damages under California Civil Code Section 3294. California is a pure comparative fault state (Li v. Yellow Cab Co. 1975), so recovery is reduced by the plaintiff's percentage of fault rather than barred. Empire Attorneys also pursues diminution in value, loss of use, and GAP-insurance coordination, damages most personal injury firms leave on the table."
+          "answer": "Economic damages (medical bills, lost wages, future care, property damage), non-economic damages (pain and suffering, emotional distress, loss of consortium), and punitive damages in cases of malice, oppression, or fraud under California Civil Code Section 3294. California is a pure comparative fault state (Li v. Yellow Cab Co. 1975), so recovery is reduced by the plaintiff's percentage of fault rather than barred. Empire Attorneys also pursue diminution in value, loss of use, and GAP-insurance coordination (damages most personal injury firms leave on the table)."
         },
         {
           "question": "Does my insurance premium go up if I file a claim after an accident that wasn't my fault?",
@@ -145,7 +143,7 @@
         {
           "question": "What is diminution in value and why does Empire Attorneys pursue it?",
           "level": "h3",
-          "answer": "Diminution in value is the market-value loss your vehicle suffers the moment it is reported in a collision, even after the physical damage is fully repaired. California common law allows a personal injury plaintiff to recover damages to make the plaintiff whole; a fixed bumper does not make the plaintiff whole if the car's resale or trade-in value has dropped. Most personal injury firms ignore this because the insurance adjuster refuses it. Empire Attorneys pursues it, including through litigation when necessary."
+          "answer": "Diminution in value is the market-value loss your vehicle suffers the moment it is reported in a collision, even after the physical damage is fully repaired. California common law allows a personal injury plaintiff to recover damages to make the plaintiff whole; a fixed bumper does not make the plaintiff whole if the car's resale or trade-in value has dropped. Most personal injury firms ignore this because the insurance adjuster refuses it. Empire Attorneys pursue it, including through litigation when necessary."
         },
         {
           "question": "Why does Deborah Song recommend UM/UIM coverage for every California driver?",
@@ -195,7 +193,7 @@
       }
     ],
     "ctaText": "Subscribe",
-    "ctaHref": "#listen"
+    "ctaHref": "#subscribe"
   },
   "footer": {
     "logo": "Inland Injury",
@@ -212,16 +210,16 @@
   "awards": [],
   "about": {
     "title": "About Deborah Song and Empire Attorneys",
-    "description": "Empire Attorneys was founded by Deborah Song to bring Orange County-style personal injury representation back to the Inland Empire community she grew up in. The firm operates from Eastvale and Norco, represents clients across California, and takes identity-theft consumer protection cases nationally under federal law. Deborah is admitted to the State Bar of California (Bar No. 337172), a peer-nominated Super Lawyers Rising Star, and, by her own count, the only full-time personal injury attorney practicing in Norco and Eastvale.",
+    "description": "Empire Attorneys was founded by Deborah Song to bring Orange County-style personal injury representation back to the Inland Empire community she grew up in. The firm operates from Eastvale and Norco, represents clients across California, and takes identity-theft consumer protection cases nationally under federal law. Deborah is admitted to the State Bar of California (Bar No. 337172), a peer-nominated Super Lawyers Rising Star, and by her own account, the only full-time personal injury attorney practicing in Norco and Eastvale.",
     "highlights": [
       "$50M+ recovered for injured Californians (Deborah Song, career total)",
-      "Super Lawyers Rising Star, peer-nominated (Deborah Song; Phillip B. Nghiem 2022–2023)",
+      "Super Lawyers Rising Star — peer-nominated (Deborah Song; Phillip B. Nghiem 2022–2023)",
       "$52.9M verdict in 2022 (trial team including Of Counsel Phillip B. Nghiem)",
       "Only full-time personal injury attorney operating in Norco and Eastvale",
-      "Dedicated property-damage department, diminution in value, loss of use, GAP coordination",
+      "Dedicated property-damage department — diminution in value, loss of use, GAP coordination",
       "Bilingual outreach through the Hispanic Bar Association of the Inland Empire and Mexican Bar Association",
       "Trained at OCBA College of Trial Advocacy and Trial Lawyers University",
-      "Free consultation; contingency fee, no recovery, no fee"
+      "Free consultation; contingency fee — no recovery, no fee"
     ],
     "showReadMore": false
   },
@@ -232,7 +230,7 @@
       "Super Lawyers Rising Star perspective on real Inland Empire case strategy",
       "Uninsured/underinsured motorist coverage and California-specific insurance issues",
       "Diminution in value, loss of use, and GAP coordination, what most firms skip",
-      "Negotiation vs. litigation, how Empire Attorneys makes the call with the client",
+      "Negotiation vs. litigation — how Empire Attorneys makes the call with the client",
       "AI in legal practice and the Uber-backed California fee-cap legislation"
     ]
   },
@@ -268,8 +266,7 @@
       ],
       "audioUrl": "",
       "guid": "",
-      "logo": "/images/logo.svg",
-      "youtubeUrl": ""
+      "logo": "/images/logo.svg"
     }
   ],
   "podcastTeam": [
@@ -298,98 +295,98 @@
         "links": [
           {
             "title": "Car Accident Lawyers",
-            "description": "Empire Attorneys represents Inland Empire drivers and passengers injured in serious collisions, roughly 95% of the firm's caseload.",
-            "href": "https://www.empireatty.com/what-does-a-car-accident-attorney-do/"
+            "description": "Empire Attorneys represents drivers and passengers injured in serious Inland Empire collisions — roughly 95% of the firm's caseload.",
+            "href": "https://inlandinjury.com/car-accident-lawyer/"
           },
           {
             "title": "Truck Accident Lawyers",
-            "description": "Commercial trucking cases involve federal motor carrier regulations and multiple corporate defendants. Deborah Song litigates them aggressively.",
-            "href": "https://www.empireatty.com/inland-empire-truck-accident-lawyer/"
+            "description": "Commercial trucking cases involve federal motor carrier regulations and multiple corporate defendants — Deborah Song litigates them aggressively.",
+            "href": "https://inlandinjury.com/truck-accident-lawyer/"
           },
           {
             "title": "Motorcycle Accident Lawyers",
             "description": "Motorcycle cases involve insurer bias and California pure comparative fault rules. Empire Attorneys pushes back on assumptions about rider conduct.",
-            "href": "https://www.empireatty.com/inland-empire-motorcycle-accident-lawyer/"
+            "href": "https://inlandinjury.com/motorcycle-accident-lawyer/"
           },
           {
             "title": "Pedestrian Accident Lawyers",
             "description": "Pedestrian strikes often involve disputed fault and driver distraction. Empire Attorneys investigates from scene to courtroom.",
-            "href": "https://www.empireatty.com/inland-empire-pedestrian-accident-lawyer/"
+            "href": "https://inlandinjury.com/pedestrian-accident-lawyer/"
           }
         ]
       },
       {
-        "label": "Other Injury Cases",
+        "label": "Serious Injury",
         "links": [
+          {
+            "title": "Catastrophic Injuries",
+            "description": "Catastrophic injury cases require life-care planning for future treatment, assistive equipment, and lost earning capacity — the firm builds damages models accordingly.",
+            "href": "https://inlandinjury.com/catastrophic-injury-lawyer/"
+          },
           {
             "title": "Wrongful Death",
             "description": "California Code of Civil Procedure Section 377.60 governs wrongful death claims. Empire Attorneys represents surviving spouses, children, and parents.",
-            "href": "https://www.empireatty.com/inland-empire-wrongful-death-lawyer/"
+            "href": "https://inlandinjury.com/wrongful-death-lawyer/"
           },
           {
-            "title": "Bicycle Accidents",
-            "description": "Cyclists struck by motor vehicles in the Inland Empire face the same insurance defense playbook as drivers. Empire Attorneys pursues full damages.",
-            "href": "https://www.empireatty.com/inland-empire-bicycle-accident-lawyer/"
+            "title": "Premises Liability",
+            "description": "Slip-and-fall, negligent security, and property-condition cases under California Civil Code Section 1714 — the firm handles these alongside motor vehicle matters.",
+            "href": "https://inlandinjury.com/premises-liability-lawyer/"
           },
           {
-            "title": "Rideshare Accidents",
-            "description": "Uber and Lyft collisions layer commercial coverage rules over standard car-accident liability. Multiple insurance policies often apply.",
-            "href": "https://www.empireatty.com/inland-empire-rideshare-accident-lawyer/"
-          },
-          {
-            "title": "Personal Injury Overview",
-            "description": "How a personal injury attorney investigates, builds, and resolves a California injury case from intake through settlement or trial.",
-            "href": "https://www.empireatty.com/what-does-a-personal-injury-attorney-do/"
+            "title": "Construction Injury",
+            "description": "Third-party construction site injuries outside workers' compensation — the firm pursues them through civil litigation when employer-immunity rules do not apply.",
+            "href": "https://inlandinjury.com/construction-injury-lawyer/"
           }
         ]
       },
       {
-        "label": "Attorney Guides",
+        "label": "Property Damage",
         "links": [
           {
-            "title": "What a Car Accident Attorney Does",
-            "description": "A walk-through of how Empire Attorneys works a car accident case from the scene through filing a lawsuit when the insurer will not deal in good faith.",
-            "href": "https://www.empireatty.com/what-does-a-car-accident-attorney-do/"
+            "title": "Diminution in Value",
+            "description": "The firm's signature damages claim. Deborah Song litigates diminution-in-value cases most personal injury firms refuse to pursue.",
+            "href": "https://inlandinjury.com/diminution-in-value/"
           },
           {
-            "title": "What a Truck Accident Attorney Does",
-            "description": "Commercial trucking claims require fast preservation of driver logs, ELD data, and motor carrier records. Here is how the firm handles them.",
-            "href": "https://www.empireatty.com/what-does-a-truck-accident-attorney-do/"
+            "title": "Loss of Use",
+            "description": "When the at-fault carrier disputes liability and refuses to pay for a rental, loss of use damages accrue daily — the firm has filed suit purely on loss of use.",
+            "href": "https://inlandinjury.com/loss-of-use/"
           },
           {
-            "title": "What a Motorcycle Accident Attorney Does",
-            "description": "Motorcycle cases turn on rider conduct disputes and California's pure comparative fault rule. The firm builds the file with that fight in mind.",
-            "href": "https://www.empireatty.com/what-does-a-motorcycle-accident-attorney-do/"
+            "title": "Total Loss and GAP Coordination",
+            "description": "GAP insurance claims expire in 30–60 days. Empire Attorneys coordinates total-loss settlement and GAP filings to stop clients from being left upside-down on a loan.",
+            "href": "https://inlandinjury.com/total-loss-gap/"
           },
           {
-            "title": "What a Wrongful Death Attorney Does",
-            "description": "Wrongful death cases under California Code of Civil Procedure Section 377.60 require careful proof of standing, damages, and statutory deadlines.",
-            "href": "https://www.empireatty.com/what-does-a-wrongful-death-attorney-do/"
+            "title": "Property Damage Negotiations",
+            "description": "Rental coordination, inspection setup, and fair-market-value challenges — a dedicated in-firm department handles these alongside the bodily injury claim.",
+            "href": "https://inlandinjury.com/property-damage/"
           }
         ]
       },
       {
-        "label": "Locations & Contact",
+        "label": "Insurance & Consumer",
         "links": [
           {
-            "title": "What a Pedestrian Accident Attorney Does",
-            "description": "A guide to how Empire Attorneys handles pedestrian-versus-vehicle cases and the disputes over crosswalk right-of-way that follow them.",
-            "href": "https://www.empireatty.com/what-does-a-pedestrian-accident-attorney-do/"
+            "title": "Uninsured/Underinsured Motorist Claims",
+            "description": "Deborah Song discusses in Episode 1 why UM/UIM coverage matters — California requires only 15/30/5 and roughly 17% of drivers are uninsured.",
+            "href": "https://inlandinjury.com/uninsured-motorist-lawyer/"
           },
           {
-            "title": "Eastvale Office",
-            "description": "Empire Attorneys' Eastvale headquarters at 12495 Limonite Avenue, serving Riverside County and the wider Inland Empire.",
-            "href": "https://www.empireatty.com/eastvale/"
+            "title": "Insurance Bad Faith",
+            "description": "When carriers deny valid claims or delay payment, the firm pursues bad-faith remedies under California Insurance Code Section 790.03.",
+            "href": "https://inlandinjury.com/insurance-bad-faith/"
           },
           {
-            "title": "Norco Office",
-            "description": "The firm's Norco location, serving Norco, Corona, and the surrounding Inland Empire communities.",
-            "href": "https://www.empireatty.com/norco/"
+            "title": "Identity Theft / Consumer Protection",
+            "description": "Federal FCRA and California consumer protection claims against Experian, TransUnion, and Equifax — one of the firm's less-common practice areas.",
+            "href": "https://inlandinjury.com/identity-theft/"
           },
           {
-            "title": "Free Consultation",
-            "description": "Contact Empire Attorneys directly. Free case review, contingency fee, no recovery means no fee.",
-            "href": "https://www.empireatty.com/contact-us/"
+            "title": "Case Results",
+            "description": "$50M+ recovered by Deborah Song over her career. Past results do not guarantee a similar outcome in your case.",
+            "href": "https://inlandinjury.com/case-results/"
           }
         ]
       }
@@ -538,7 +535,7 @@
       ],
       "bio": [
         "Deborah Song founded Empire Attorneys (doing business as Inland Injury) after growing up in Moreno Valley and earning her B.A. from UC Riverside. She started law school at Whittier Law (which closed during her first year), transferred to Western State University College of Law in Irvine to keep her part-time night program, and worked daytime hours at Orange County personal injury trial firms throughout law school to build trial-ready experience before graduation.",
-        "Over her career, Deborah Song has helped recover more than $50 million for injured Californians. She is a peer-nominated Super Lawyers Rising Star and is, by her own count, the only full-time personal injury attorney practicing in Norco and Eastvale. She deliberately returned to the Inland Empire after Orange County practice to bring aggressive OC-style representation, especially on property-damage-adjacent damages like diminution in value, loss of use, and GAP coordination, to a region she says is consistently under-served.",
+        "Over her career, Deborah Song has helped recover more than $50 million for injured Californians. She is a peer-nominated Super Lawyers Rising Star and is, by her own account, the only full-time personal injury attorney practicing in Norco and Eastvale. She deliberately returned to the Inland Empire after Orange County practice to bring aggressive OC-style representation (especially on property-damage-adjacent damages like diminution in value, loss of use, and GAP coordination) to a region she says is consistently under-served.",
         "Beyond her practice, Deborah Song is a member of the Hispanic Bar Association of the Inland Empire and the Mexican Bar Association (focused on community outreach and educating Inland Empire residents on their rights regardless of immigration status) and serves as Secretary of the Norco Rotary Club, which supports local veterans, senior communities, and student scholarships."
       ],
       "memberships": [
@@ -608,7 +605,7 @@
       ],
       "bio": [
         "Phillip B. Nghiem is Of Counsel to Empire Attorneys and is admitted to the State Bar of California (Bar No. 291525). He was part of the trial team that secured a $52.9 million verdict in 2022 and has separately negotiated a $1.3 million settlement on behalf of injured Californians. Past results do not guarantee a similar outcome in any future case.",
-        "Phillip has been peer-nominated as a Super Lawyers Rising Star in 2022 and 2023, recognition limited to approximately 2.5% of eligible California attorneys. He trained through the OCBA College of Trial Advocacy and Trial Lawyers University and joins Empire Attorneys on select trial matters, particularly complex insurance bad-faith and catastrophic-injury cases."
+        "Phillip has been peer-nominated as a Super Lawyers Rising Star in 2022 and 2023 — recognition limited to approximately 2.5% of eligible California attorneys. He trained through the OCBA College of Trial Advocacy and Trial Lawyers University and joins Empire Attorneys on select trial matters, particularly complex insurance bad-faith and catastrophic-injury cases. TODO: confirm education and full admissions history with the firm before launch."
       ],
       "memberships": [
         "State Bar of California"
@@ -646,7 +643,7 @@
       },
       {
         "kind": "prior_results",
-        "text": "Past results do not guarantee future outcomes. Each case is unique and must be evaluated on its own merits. The outcome of any prior case, including the $50M+ career recovery reference, the $52.9M 2022 verdict, and the $1.3M settlement, does not predict a similar result in your case."
+        "text": "Past results do not guarantee future outcomes. Each case is unique and must be evaluated on its own merits. The outcome of any prior case (including the $50M+ career recovery reference, the $52.9M 2022 verdict, and the $1.3M settlement) does not predict a similar result in your case."
       },
       {
         "kind": "testimonial",
@@ -670,7 +667,7 @@
       },
       {
         "kind": "super_lawyers",
-        "text": "Super Lawyers Rising Star recognition (Deborah Song; Phillip B. Nghiem 2022–2023) is a peer-nomination rating limited to approximately 2.5% of eligible California attorneys, conferred by Thomson Reuters. Ratings and recognitions do not guarantee future results."
+        "text": "Super Lawyers Rising Star recognition (Deborah Song; Phillip B. Nghiem 2022–2023) is a peer-nomination rating limited to approximately 2.5% of eligible California attorneys, conferred by Thomson Reuters. Ratings and recognition do not guarantee future results."
       }
     ]
   }

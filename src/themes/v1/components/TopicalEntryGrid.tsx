@@ -42,14 +42,23 @@ const TopicalEntryGrid = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {topicalEntryGrid.tabs[activeTab].links.map((link, index) => {
             const isExternal = /^https?:\/\//.test(link.href)
-            const cardClass = "bg-white rounded-2xl overflow-hidden hover:shadow-xl transition-all group p-6 md:p-8 flex flex-col justify-center"
+            const linkImage = (link as { image?: string }).image
+            const cardClass = "bg-white rounded-2xl overflow-hidden hover:shadow-xl transition-all group p-6 md:p-8 flex items-center gap-5 md:gap-6"
             const inner = (
               <>
-                <h3 className="text-xl md:text-2xl font-bold text-black mb-3">{link.title}</h3>
-                <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-4">{link.description}</p>
-                <div className="flex items-center text-black font-semibold group-hover:text-secondary transition-colors">
-                  <span className="text-sm md:text-base">Read More</span>
-                  <ChevronRight className="w-5 h-5 ml-1" />
+                {linkImage && (
+                  <div className="flex-shrink-0 flex items-center justify-center w-24 h-24 md:w-28 md:h-28 rounded-xl bg-[#EBF3F7]">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={linkImage} alt="" aria-hidden="true" className="w-20 h-20 md:w-24 md:h-24" />
+                  </div>
+                )}
+                <div className="flex-1 flex flex-col justify-center">
+                  <h3 className="text-xl md:text-2xl font-bold text-black mb-3">{link.title}</h3>
+                  <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-4">{link.description}</p>
+                  <div className="flex items-center text-black font-semibold group-hover:text-secondary transition-colors">
+                    <span className="text-sm md:text-base">Read More</span>
+                    <ChevronRight className="w-5 h-5 ml-1" />
+                  </div>
                 </div>
               </>
             )

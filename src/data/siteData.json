@@ -299,22 +299,26 @@
           {
             "title": "Car Accident Lawyers",
             "description": "Empire Attorneys represents Inland Empire drivers and passengers injured in serious collisions, roughly 95% of the firm's caseload.",
-            "href": "https://www.empireatty.com/what-does-a-car-accident-attorney-do/"
+            "href": "https://www.empireatty.com/what-does-a-car-accident-attorney-do/",
+            "image": "/topical/icon-pa-car.svg"
           },
           {
             "title": "Truck Accident Lawyers",
             "description": "Commercial trucking cases involve federal motor carrier regulations and multiple corporate defendants. Deborah Song litigates them aggressively.",
-            "href": "https://www.empireatty.com/inland-empire-truck-accident-lawyer/"
+            "href": "https://www.empireatty.com/inland-empire-truck-accident-lawyer/",
+            "image": "/topical/icon-pa-truck.svg"
           },
           {
             "title": "Motorcycle Accident Lawyers",
             "description": "Motorcycle cases involve insurer bias and California pure comparative fault rules. Empire Attorneys pushes back on assumptions about rider conduct.",
-            "href": "https://www.empireatty.com/inland-empire-motorcycle-accident-lawyer/"
+            "href": "https://www.empireatty.com/inland-empire-motorcycle-accident-lawyer/",
+            "image": "/topical/icon-pa-moto.svg"
           },
           {
             "title": "Pedestrian Accident Lawyers",
             "description": "Pedestrian strikes often involve disputed fault and driver distraction. Empire Attorneys investigates from scene to courtroom.",
-            "href": "https://www.empireatty.com/inland-empire-pedestrian-accident-lawyer/"
+            "href": "https://www.empireatty.com/inland-empire-pedestrian-accident-lawyer/",
+            "image": "/topical/icon-pa-pedestrian.svg"
           }
         ]
       },
@@ -324,22 +328,26 @@
           {
             "title": "Wrongful Death",
             "description": "California Code of Civil Procedure Section 377.60 governs wrongful death claims. Empire Attorneys represents surviving spouses, children, and parents.",
-            "href": "https://www.empireatty.com/inland-empire-wrongful-death-lawyer/"
+            "href": "https://www.empireatty.com/inland-empire-wrongful-death-lawyer/",
+            "image": "/topical/icon-pa-wrongful-death.svg"
           },
           {
             "title": "Bicycle Accidents",
             "description": "Cyclists struck by motor vehicles in the Inland Empire face the same insurance defense playbook as drivers. Empire Attorneys pursues full damages.",
-            "href": "https://www.empireatty.com/inland-empire-bicycle-accident-lawyer/"
+            "href": "https://www.empireatty.com/inland-empire-bicycle-accident-lawyer/",
+            "image": "/topical/icon-pa-bike.svg"
           },
           {
             "title": "Rideshare Accidents",
             "description": "Uber and Lyft collisions layer commercial coverage rules over standard car-accident liability. Multiple insurance policies often apply.",
-            "href": "https://www.empireatty.com/inland-empire-rideshare-accident-lawyer/"
+            "href": "https://www.empireatty.com/inland-empire-rideshare-accident-lawyer/",
+            "image": "/topical/icon-pa-rideshare.svg"
           },
           {
             "title": "Personal Injury Overview",
             "description": "How a personal injury attorney investigates, builds, and resolves a California injury case from intake through settlement or trial.",
-            "href": "https://www.empireatty.com/what-does-a-personal-injury-attorney-do/"
+            "href": "https://www.empireatty.com/what-does-a-personal-injury-attorney-do/",
+            "image": "/topical/icon-pa-medical.svg"
           }
         ]
       },
@@ -349,22 +357,26 @@
           {
             "title": "What a Car Accident Attorney Does",
             "description": "A walk-through of how Empire Attorneys works a car accident case from the scene through filing a lawsuit when the insurer will not deal in good faith.",
-            "href": "https://www.empireatty.com/what-does-a-car-accident-attorney-do/"
+            "href": "https://www.empireatty.com/what-does-a-car-accident-attorney-do/",
+            "image": "/topical/icon-phase-investigate.svg"
           },
           {
             "title": "What a Truck Accident Attorney Does",
             "description": "Commercial trucking claims require fast preservation of driver logs, ELD data, and motor carrier records. Here is how the firm handles them.",
-            "href": "https://www.empireatty.com/what-does-a-truck-accident-attorney-do/"
+            "href": "https://www.empireatty.com/what-does-a-truck-accident-attorney-do/",
+            "image": "/topical/icon-svc-comply.svg"
           },
           {
             "title": "What a Motorcycle Accident Attorney Does",
             "description": "Motorcycle cases turn on rider conduct disputes and California's pure comparative fault rule. The firm builds the file with that fight in mind.",
-            "href": "https://www.empireatty.com/what-does-a-motorcycle-accident-attorney-do/"
+            "href": "https://www.empireatty.com/what-does-a-motorcycle-accident-attorney-do/",
+            "image": "/topical/icon-phase-litigate.svg"
           },
           {
             "title": "What a Wrongful Death Attorney Does",
             "description": "Wrongful death cases under California Code of Civil Procedure Section 377.60 require careful proof of standing, damages, and statutory deadlines.",
-            "href": "https://www.empireatty.com/what-does-a-wrongful-death-attorney-do/"
+            "href": "https://www.empireatty.com/what-does-a-wrongful-death-attorney-do/",
+            "image": "/topical/icon-svc-liability.svg"
           }
         ]
       },
@@ -374,22 +386,26 @@
           {
             "title": "What a Pedestrian Accident Attorney Does",
             "description": "A guide to how Empire Attorneys handles pedestrian-versus-vehicle cases and the disputes over crosswalk right-of-way that follow them.",
-            "href": "https://www.empireatty.com/what-does-a-pedestrian-accident-attorney-do/"
+            "href": "https://www.empireatty.com/what-does-a-pedestrian-accident-attorney-do/",
+            "image": "/topical/icon-svc-defense.svg"
           },
           {
             "title": "Eastvale Office",
             "description": "Empire Attorneys' Eastvale headquarters at 12495 Limonite Avenue, serving Riverside County and the wider Inland Empire.",
-            "href": "https://www.empireatty.com/eastvale/"
+            "href": "https://www.empireatty.com/eastvale/",
+            "image": "/topical/icon-phase-consult.svg"
           },
           {
             "title": "Norco Office",
             "description": "The firm's Norco location, serving Norco, Corona, and the surrounding Inland Empire communities.",
-            "href": "https://www.empireatty.com/norco/"
+            "href": "https://www.empireatty.com/norco/",
+            "image": "/topical/icon-phase-resolve.svg"
           },
           {
             "title": "Free Consultation",
             "description": "Contact Empire Attorneys directly. Free case review, contingency fee, no recovery means no fee.",
-            "href": "https://www.empireatty.com/contact-us/"
+            "href": "https://www.empireatty.com/contact-us/",
+            "image": "/topical/icon-phase-negotiate.svg"
           }
         ]
       }

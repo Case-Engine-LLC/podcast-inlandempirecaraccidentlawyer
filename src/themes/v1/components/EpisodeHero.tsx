@@ -99,13 +99,13 @@ const EpisodeHero = ({ episode: propEpisode }: EpisodeHeroProps) => {
               </div>
             </div>
 
-            {/* Right Image — Episode Thumbnail */}
-            <div className="relative w-full h-[280px] md:h-[380px] flex items-center justify-center">
-              <div className="w-full h-full rounded-2xl overflow-hidden">
+            {/* Right Image — Episode Thumbnail (square podcast cover) */}
+            <div className="relative w-full flex items-center justify-center">
+              <div className="w-full aspect-square max-w-[380px] mx-auto rounded-2xl overflow-hidden">
                 <img
                   src="/cover-placeholder.jpg"
                   alt={ep.title}
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-contain"
                 />
               </div>
             </div>

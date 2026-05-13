@@ -1,8 +1,9 @@
 {
   "siteConfig": {
-    "podcastName": "Empire Law Firm with Deborah Song",
+    "podcastName": "Inland Empire Car and Truck Accident Law w. Deborah Song",
     "tagline": "NEW EPISODE",
     "podcastUrl": "https://podcast-inlandempirecaraccidentlawyer.vercel.app",
+    "rssFeedUrl": "https://rss2.flightcast.com/zs5cnwlq0fk2fnfsnbdcgyik.xml",
     "platformLinks": {
       "apple": "#",
       "spotify": "#"
@@ -202,11 +203,9 @@
     "description": "Empire Law Firm with Deborah Song is a podcast hosted by Empire Attorneys (dba Inland Injury), a California personal injury firm founded by Deborah Song and operating from Eastvale and Norco. The firm handles personal injury, car accident, motorcycle accident, truck accident, premises liability, wrongful death, and catastrophic injury matters throughout California, and consumer identity-theft matters nationally.",
     "copyright": "Empire Attorneys",
     "socialLinks": {
-      "twitter": "#",
-      "linkedin": "#",
-      "facebook": "#",
-      "instagram": "#",
-      "youtube": "#"
+      "facebook": "https://www.facebook.com/inlandinjurylawcenter/",
+      "instagram": "https://www.instagram.com/inlandinjurylawcenter/",
+      "linkedin": "https://www.linkedin.com/in/deborahsongg/"
     }
   },
   "awards": [],
@@ -291,6 +290,7 @@
   ],
   "topicalEntryGrid": {
     "title": "Explore Empire Attorneys' Practice Areas",
+    "description": "Browse the California accident topics Deborah Song covers on the podcast. Each card links to a deeper resource from Empire Law on that situation.",
     "tabs": [
       {
         "label": "Motor Vehicle",
@@ -298,101 +298,101 @@
           {
             "title": "Car Accident Lawyers",
             "description": "Empire Attorneys represents drivers and passengers injured in serious Inland Empire collisions — roughly 95% of the firm's caseload.",
-            "href": "https://inlandinjury.com/car-accident-lawyer/",
+            "href": "https://www.empireatty.com/what-does-a-car-accident-attorney-do/",
             "image": "/topical/icon-pa-car.svg"
           },
           {
             "title": "Truck Accident Lawyers",
             "description": "Commercial trucking cases involve federal motor carrier regulations and multiple corporate defendants — Deborah Song litigates them aggressively.",
-            "href": "https://inlandinjury.com/truck-accident-lawyer/",
+            "href": "https://www.empireatty.com/inland-empire-truck-accident-lawyer/",
             "image": "/topical/icon-pa-truck.svg"
           },
           {
             "title": "Motorcycle Accident Lawyers",
             "description": "Motorcycle cases involve insurer bias and California pure comparative fault rules. Empire Attorneys pushes back on assumptions about rider conduct.",
-            "href": "https://inlandinjury.com/motorcycle-accident-lawyer/",
+            "href": "https://www.empireatty.com/inland-empire-motorcycle-accident-lawyer/",
             "image": "/topical/icon-pa-moto.svg"
           },
           {
             "title": "Pedestrian Accident Lawyers",
             "description": "Pedestrian strikes often involve disputed fault and driver distraction. Empire Attorneys investigates from scene to courtroom.",
-            "href": "https://inlandinjury.com/pedestrian-accident-lawyer/",
+            "href": "https://www.empireatty.com/inland-empire-pedestrian-accident-lawyer/",
             "image": "/topical/icon-pa-pedestrian.svg"
           }
         ]
       },
       {
-        "label": "Serious Injury",
+        "label": "Other Injury Cases",
         "links": [
-          {
-            "title": "Catastrophic Injuries",
-            "description": "Catastrophic injury cases require life-care planning for future treatment, assistive equipment, and lost earning capacity — the firm builds damages models accordingly.",
-            "href": "https://inlandinjury.com/catastrophic-injury-lawyer/"
-          },
           {
             "title": "Wrongful Death",
             "description": "California Code of Civil Procedure Section 377.60 governs wrongful death claims. Empire Attorneys represents surviving spouses, children, and parents.",
-            "href": "https://inlandinjury.com/wrongful-death-lawyer/"
+            "href": "https://www.empireatty.com/inland-empire-wrongful-death-lawyer/"
           },
           {
-            "title": "Premises Liability",
-            "description": "Slip-and-fall, negligent security, and property-condition cases under California Civil Code Section 1714 — the firm handles these alongside motor vehicle matters.",
-            "href": "https://inlandinjury.com/premises-liability-lawyer/"
+            "title": "Bicycle Accidents",
+            "description": "Cyclists struck by motor vehicles in the Inland Empire face the same insurance defense playbook as drivers. Empire Attorneys pursues full damages.",
+            "href": "https://www.empireatty.com/inland-empire-bicycle-accident-lawyer/"
           },
           {
-            "title": "Construction Injury",
-            "description": "Third-party construction site injuries outside workers' compensation — the firm pursues them through civil litigation when employer-immunity rules do not apply.",
-            "href": "https://inlandinjury.com/construction-injury-lawyer/"
+            "title": "Rideshare Accidents",
+            "description": "Uber and Lyft collisions layer commercial coverage rules over standard car-accident liability. Multiple insurance policies often apply.",
+            "href": "https://www.empireatty.com/inland-empire-rideshare-accident-lawyer/"
+          },
+          {
+            "title": "Personal Injury Overview",
+            "description": "How a personal injury attorney investigates, builds, and resolves a California injury case from intake through settlement or trial.",
+            "href": "https://www.empireatty.com/what-does-a-personal-injury-attorney-do/"
           }
         ]
       },
       {
-        "label": "Property Damage",
+        "label": "Attorney Guides",
         "links": [
           {
-            "title": "Diminution in Value",
-            "description": "The firm's signature damages claim. Deborah Song litigates diminution-in-value cases most personal injury firms refuse to pursue.",
-            "href": "https://inlandinjury.com/diminution-in-value/"
+            "title": "What a Car Accident Attorney Does",
+            "description": "A walk-through of how Empire Attorneys works a car accident case from the scene through filing a lawsuit when the insurer will not deal in good faith.",
+            "href": "https://www.empireatty.com/what-does-a-car-accident-attorney-do/"
           },
           {
-            "title": "Loss of Use",
-            "description": "When the at-fault carrier disputes liability and refuses to pay for a rental, loss of use damages accrue daily — the firm has filed suit purely on loss of use.",
-            "href": "https://inlandinjury.com/loss-of-use/"
+            "title": "What a Truck Accident Attorney Does",
+            "description": "Commercial trucking claims require fast preservation of driver logs, ELD data, and motor carrier records. Here is how the firm handles them.",
+            "href": "https://www.empireatty.com/what-does-a-truck-accident-attorney-do/"
           },
           {
-            "title": "Total Loss and GAP Coordination",
-            "description": "GAP insurance claims expire in 30–60 days. Empire Attorneys coordinates total-loss settlement and GAP filings to stop clients from being left upside-down on a loan.",
-            "href": "https://inlandinjury.com/total-loss-gap/"
+            "title": "What a Motorcycle Accident Attorney Does",
+            "description": "Motorcycle cases turn on rider conduct disputes and California's pure comparative fault rule. The firm builds the file with that fight in mind.",
+            "href": "https://www.empireatty.com/what-does-a-motorcycle-accident-attorney-do/"
           },
           {
-            "title": "Property Damage Negotiations",
-            "description": "Rental coordination, inspection setup, and fair-market-value challenges — a dedicated in-firm department handles these alongside the bodily injury claim.",
-            "href": "https://inlandinjury.com/property-damage/"
+            "title": "What a Pedestrian Accident Attorney Does",
+            "description": "A guide to how Empire Attorneys handles pedestrian-versus-vehicle cases and the disputes over crosswalk right-of-way that follow them.",
+            "href": "https://www.empireatty.com/what-does-a-pedestrian-accident-attorney-do/"
           }
         ]
       },
       {
-        "label": "Insurance & Consumer",
+        "label": "Locations & Contact",
         "links": [
           {
-            "title": "Uninsured/Underinsured Motorist Claims",
-            "description": "Deborah Song discusses in Episode 1 why UM/UIM coverage matters — California requires only 15/30/5 and roughly 17% of drivers are uninsured.",
-            "href": "https://inlandinjury.com/uninsured-motorist-lawyer/"
+            "title": "Eastvale Office",
+            "description": "Empire Attorneys' Eastvale headquarters at 12495 Limonite Avenue, serving Riverside County and the wider Inland Empire.",
+            "href": "https://www.empireatty.com/eastvale/"
           },
           {
-            "title": "Insurance Bad Faith",
-            "description": "When carriers deny valid claims or delay payment, the firm pursues bad-faith remedies under California Insurance Code Section 790.03.",
-            "href": "https://inlandinjury.com/insurance-bad-faith/"
+            "title": "Norco Office",
+            "description": "The firm's Norco location, serving Norco, Corona, and the surrounding Inland Empire communities.",
+            "href": "https://www.empireatty.com/norco/"
           },
           {
-            "title": "Identity Theft / Consumer Protection",
-            "description": "Federal FCRA and California consumer protection claims against Experian, TransUnion, and Equifax — one of the firm's less-common practice areas.",
-            "href": "https://inlandinjury.com/identity-theft/"
+            "title": "What a Wrongful Death Attorney Does",
+            "description": "Wrongful death cases under California Code of Civil Procedure Section 377.60 require careful proof of standing, damages, and statutory deadlines.",
+            "href": "https://www.empireatty.com/what-does-a-wrongful-death-attorney-do/"
           },
           {
-            "title": "Case Results",
-            "description": "$50M+ recovered by Deborah Song over her career. Past results do not guarantee a similar outcome in your case.",
-            "href": "https://inlandinjury.com/case-results/"
+            "title": "Free Consultation",
+            "description": "Contact Empire Attorneys directly. Free case review, contingency fee, no recovery means no fee.",
+            "href": "https://www.empireatty.com/contact-us/"
           }
         ]
       }

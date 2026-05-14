@@ -5,8 +5,8 @@
     "podcastUrl": "https://podcast-inlandempirecaraccidentlawyer.vercel.app",
     "rssFeedUrl": "https://rss2.flightcast.com/zs5cnwlq0fk2fnfsnbdcgyik.xml",
     "platformLinks": {
-      "apple": "#",
-      "spotify": "#"
+      "apple": "https://podcasts.apple.com/us/podcast/inland-empire-car-and-truck-accident-law-w-deborah-song/id1893641702",
+      "spotify": "https://open.spotify.com/show/4tXOmhpmYZfS5B9ECgZqu9"
     },
     "formCTA": {
       "text": "Free Consultation",

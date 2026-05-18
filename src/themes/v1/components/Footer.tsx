@@ -3,7 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react'
-import { footer, episodes as episodesData } from '@/data/siteData'
+import { footer, episodes as episodesData, contact } from '@/data/siteData'
 
 const XIcon = ({ size = 20, className = '' }: { size?: number; className?: string }) => (
   <svg
@@ -95,6 +95,13 @@ const Footer = () => {
           <p className="text-sm text-white/60 text-center">
             © {currentYear} {footer.copyright}. All rights reserved.
           </p>
+          <div className="flex items-center justify-center gap-4 mt-2">
+            <Link href={`${contact.website.replace(/\/$/, '')}/privacy-policy/`} target="_blank" rel="noopener noreferrer" className="text-xs text-white/40 underline hover:text-white/60">Privacy Policy</Link>
+            <span className="text-xs text-white/20">|</span>
+            <Link href={contact.website} target="_blank" rel="noopener noreferrer" className="text-xs text-white/40 underline hover:text-white/60">{contact.website.replace('https://', '')}</Link>
+            <span className="text-xs text-white/20">|</span>
+            <a href={`tel:${contact.phone.replace(/\D/g, '')}`} className="text-xs text-white/40 hover:text-white/60">{contact.phone}</a>
+          </div>
         </div>
       </div>
     </footer>

@@ -126,7 +126,7 @@ const EpisodeHero = ({ episode: propEpisode }: EpisodeHeroProps) => {
             <div className="relative w-full flex items-center justify-center">
               <div className="w-full aspect-square max-w-[380px] mx-auto rounded-2xl overflow-hidden">
                 <img
-                  src="/episode-art.avif"
+                  src={(ep as { logo?: string }).logo || "/episode-art.avif"}
                   alt={ep.title}
                   className="w-full h-full object-contain"
                 />

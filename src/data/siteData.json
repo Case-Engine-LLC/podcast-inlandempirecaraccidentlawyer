@@ -174,8 +174,8 @@
     "satisfactionRate": 0,
     "satisfactionLabel": "",
     "satisfactionVerbalization": "",
-    "casesHandled": 0,
-    "casesLabel": "",
+    "casesHandled": 50,
+    "casesLabel": "$50M+ Recovered",
     "casesVerbalization": "Deborah Song has helped recover more than $50 million for injured Californians over the course of her career. Of Counsel Phillip B. Nghiem was part of a trial team that secured a $52.9 million verdict in 2022. Past results do not guarantee a similar outcome in any future case.",
     "ratingVerbalization": ""
   },
@@ -271,7 +271,7 @@
       ],
       "audioUrl": "",
       "guid": "",
-      "logo": "",
+      "logo": "/cover-placeholder.jpg",
       "slug": "the-you-interview-with-deborah-song"
     }
   ],

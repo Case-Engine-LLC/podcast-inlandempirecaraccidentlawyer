@@ -167,7 +167,56 @@
     "featuredQuote": "If you wait around, not great things are going to happen for you. The insurance company's goal is to see who blinks first, and the only way they take you seriously is if they know you'll actually try the case.",
     "additionalParagraphs": []
   },
-  "testimonials": [],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Michelle L.",
+      "initials": "ML",
+      "role": "Verified Client",
+      "rating": 5,
+      "text": "Deborah and her team were wonderful to work with after my car accident as a passenger during an Uber ride. They have all been friendly, professional, and incredibly knowledgeable during the entire process. Deborah made sure to check in with me at every step of the way with the legal matters and her team checked in with me after every medical appointment to ensure that I was getting the treatment I needed. My case just settled and I'm so glad I had Deborah and her team by my side."
+    },
+    {
+      "id": 2,
+      "name": "Matthew I.",
+      "initials": "MI",
+      "role": "Verified Client",
+      "rating": 5,
+      "text": "Deborah is an amazing injury lawyer who excels in providing client-focused legal representation. She skillfully navigates through the complexities of my case, and ensured that I received compensation. Deborah is extremely approachable and is always readily available to answer any questions I may have. I highly recommend Deborah for anyone in need of a reliable injury lawyer."
+    },
+    {
+      "id": 3,
+      "name": "Cristina R.",
+      "initials": "CR",
+      "role": "Verified Client",
+      "rating": 5,
+      "text": "Fantastic attorney, extremely knowledgeable, professional, engaging and communicative. Deborah Song is a top notch IE lawyer and I'm at ease when life throws its curveballs my way."
+    },
+    {
+      "id": 4,
+      "name": "Ethan",
+      "initials": "E",
+      "role": "Verified Client",
+      "rating": 5,
+      "text": "A very comforting experience with this law firm. Actively responsive and prioritize customer needs to their very best. I am very glad to have a lawyer like Deborah who gave a smooth experience throughout my entire case. Your questions, concerns, thoughts, will be answered to the fullest at this law firm."
+    },
+    {
+      "id": 5,
+      "name": "Lily",
+      "initials": "L",
+      "role": "Verified Client",
+      "rating": 5,
+      "text": "I am so grateful for Deborah and her team's exceptional work on my case. They were incredibly caring and supportive, alleviating the stress and allowing me to focus on healing and other priorities. I was fortunate to be referred to them, and I wholeheartedly recommend them to anyone seeking legal assistance."
+    },
+    {
+      "id": 6,
+      "name": "Josh C.",
+      "initials": "JC",
+      "role": "Verified Client",
+      "rating": 5,
+      "text": "5 stars doesn't begin to express how satisfied I am with the help I received from this law office! I have had past experiences with a number of other offices but none compare to the attention to detail and approachability that you will experience with this office. One person in particular that has made my stressful situation quick and easy is Deborah. She was super helpful with handling my case, always available for any questions I had."
+    }
+  ],
   "stats": {
     "rating": 0,
     "reviewCount": 0,

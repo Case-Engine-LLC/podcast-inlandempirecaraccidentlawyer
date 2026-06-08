@@ -54,6 +54,13 @@ function getAttr(node: Record<string, unknown>, attr: string): string {
   return (node?.[`@_${attr}`] as string) ?? ''
 }
 
+function getText(node: unknown): string {
+  if (node && typeof node === 'object' && '#text' in node) {
+    return String((node as { '#text'?: unknown })['#text'] ?? '')
+  }
+  return String(node ?? '')
+}
+
 // Decode HTML/numeric entities so React doesn't re-encode them (otherwise
 // `&#39;` in the RSS feed renders as the literal text "&#39;" on the page).
 function decodeEntities(s: string): string {
@@ -143,7 +150,7 @@ export async function fetchPodcastFeed(rssUrl: string): Promise<PodcastFeed> {
 
     return {
       id: episodeNum,
-      guid: String(item.guid ?? item.link ?? `ep-${episodeNum}`),
+      guid: getText(item.guid ?? item.link ?? `ep-${episodeNum}`),
       title: decodeEntities(String(item.title ?? '')),
       subtitle: decodeEntities(String(item['itunes:subtitle'] ?? '').slice(0, 120)),
       description: decodeEntities(String(item.description ?? item['content:encoded'] ?? '').replace(/<[^>]*>/g, '')),

@@ -4,6 +4,7 @@ import React from 'react'
 import Link from 'next/link'
 import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react'
 import { footer, episodes as episodesData, contact } from '@/data/siteData'
+import type { Episode } from '@/lib/data'
 
 const XIcon = ({ size = 20, className = '' }: { size?: number; className?: string }) => (
   <svg
@@ -19,10 +20,15 @@ const XIcon = ({ size = 20, className = '' }: { size?: number; className?: strin
   </svg>
 )
 
-const Footer = () => {
+interface FooterProps {
+  episodes?: Episode[]
+}
+
+const Footer = ({ episodes }: FooterProps) => {
   const currentYear = new Date().getFullYear()
 
-  const epList = (episodesData as Array<{ id: number | string; number?: number; title: string; slug?: string }>).map(ep => ({
+  const sourceEpisodes = episodes ?? episodesData
+  const epList = (sourceEpisodes as Array<{ id: number | string; number?: number; title: string; slug?: string }>).map(ep => ({
     name: `Episode ${ep.number ?? ep.id}: ${(ep.title || '').split(':')[0]}`,
     href: `/episode/${ep.slug ?? ep.id}`,
   }))

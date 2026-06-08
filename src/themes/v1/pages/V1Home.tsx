@@ -14,6 +14,7 @@ import FAQ from '../components/FAQ'
 import TopicalEntryGrid from '../components/TopicalEntryGrid'
 import ContactSection from '../components/ContactSection'
 import Footer from '../components/Footer'
+import { siteConfig } from '@/data/siteData'
 import type { Episode } from '@/lib/data'
 
 const homeSchema = {
@@ -193,6 +194,31 @@ const homeSchema = {
   ]
 }
 
+const LEGACY_PODCAST_URL = 'https://podcast-inlandempirecaraccidentlawy.vercel.app'
+
+function withCurrentPodcastSchemaUrls(value: unknown): unknown {
+  const podcastUrl = siteConfig.podcastUrl.replace(/\/$/, '')
+
+  if (typeof value === 'string') {
+    return value.replaceAll(LEGACY_PODCAST_URL, podcastUrl)
+  }
+
+  if (Array.isArray(value)) {
+    return value.map(withCurrentPodcastSchemaUrls)
+  }
+
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, nested]) => {
+        if (key === 'webFeed') return [key, siteConfig.rssFeedUrl]
+        return [key, withCurrentPodcastSchemaUrls(nested)]
+      })
+    )
+  }
+
+  return value
+}
+
 interface V1HomeProps {
   episodes?: Episode[]
 }
@@ -202,7 +228,7 @@ const V1Home = ({ episodes }: V1HomeProps) => {
     <div className="bg-white min-h-screen overflow-x-hidden">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(withCurrentPodcastSchemaUrls(homeSchema)) }}
       />
       <Header />
 
@@ -220,7 +246,7 @@ const V1Home = ({ episodes }: V1HomeProps) => {
         <ContactSection />
       </main>
 
-      <Footer />
+      <Footer episodes={episodes} />
     </div>
   )
 }

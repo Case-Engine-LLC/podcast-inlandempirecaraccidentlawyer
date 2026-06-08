@@ -5,6 +5,7 @@ import EpisodeHero from '../components/EpisodeHero'
 import EpisodeContent from '../components/EpisodeContent'
 import OtherEpisodes from '../components/OtherEpisodes'
 import FAQ from '../components/FAQ'
+import { siteConfig } from '@/data/siteData'
 import type { Episode } from '@/lib/data'
 import type { TranscriptSegment } from '@/lib/rss'
 
@@ -128,8 +129,59 @@ const episodeSchema = {
   ]
 }
 
-export function generateEpisodeSchema(_episodeId: string) {
-  return episodeSchema
+export function generateEpisodeSchema(episode: Episode | null | undefined) {
+  if (!episode) return episodeSchema
+
+  const podcastUrl = siteConfig.podcastUrl.replace(/\/$/, '')
+  const canonicalPath = `/episode/${episode.slug ?? episode.id}`
+
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebPage',
+        '@id': `${podcastUrl}${canonicalPath}#webpage`,
+        url: `${podcastUrl}${canonicalPath}`,
+        name: `${episode.title} | ${siteConfig.podcastName}`,
+        description: episode.description,
+        isPartOf: { '@id': `${podcastUrl}/#website` },
+        inLanguage: 'en-US',
+        breadcrumb: {
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: `${podcastUrl}/` },
+            { '@type': 'ListItem', position: 2, name: 'Episodes', item: `${podcastUrl}/#episodes` },
+            { '@type': 'ListItem', position: 3, name: episode.title, item: `${podcastUrl}${canonicalPath}` },
+          ],
+        },
+      },
+      {
+        '@type': 'PodcastSeries',
+        '@id': `${podcastUrl}/#podcast`,
+        name: siteConfig.podcastName,
+        url: `${podcastUrl}/`,
+        webFeed: siteConfig.rssFeedUrl,
+      },
+      {
+        '@type': 'PodcastEpisode',
+        '@id': `${podcastUrl}${canonicalPath}#episode`,
+        name: episode.title,
+        description: episode.description,
+        episodeNumber: episode.number,
+        url: `${podcastUrl}${canonicalPath}`,
+        image: episode.logo || `${podcastUrl}/cover.jpg`,
+        timeRequired: episode.duration,
+        partOfSeries: { '@id': `${podcastUrl}/#podcast` },
+        associatedMedia: episode.audioUrl
+          ? {
+              '@type': 'MediaObject',
+              contentUrl: episode.audioUrl,
+              encodingFormat: episode.audioType || 'audio/mpeg',
+            }
+          : undefined,
+      },
+    ],
+  }
 }
 
 interface V1EpisodePageProps {
@@ -144,7 +196,7 @@ const V1EpisodePage = ({ episodeId: _episodeId, episode: rssEpisode, allEpisodes
     <div className="bg-white min-h-screen overflow-x-hidden">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(episodeSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateEpisodeSchema(rssEpisode)) }}
       />
       <Header variant="light" />
 
@@ -155,7 +207,7 @@ const V1EpisodePage = ({ episodeId: _episodeId, episode: rssEpisode, allEpisodes
         <FAQ />
       </main>
 
-      <Footer />
+      <Footer episodes={allEpisodes} />
     </div>
   )
 }

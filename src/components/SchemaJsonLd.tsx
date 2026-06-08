@@ -6,14 +6,26 @@ import {
   compliance,
   contact,
   episode,
-  episodes,
   faqGroups,
   footer,
   siteConfig,
   stats,
 } from '@/data/siteData'
+import { getAllEpisodes } from '@/lib/data'
 
-const SchemaJsonLd = () => {
+type SchemaEpisode = {
+  id?: number
+  slug?: string
+  number?: number
+  title: string
+  description: string
+  date: string
+  duration: string
+  audioUrl?: string
+  audioType?: string
+}
+
+const SchemaJsonLd = async () => {
   const podcastUrl = (siteConfig as { podcastUrl?: string }).podcastUrl?.replace(/\/$/, '') || ''
   const firmUrl = (contact.website || '').replace(/\/$/, '')
   const platformLinks = siteConfig.platformLinks || {}
@@ -32,22 +44,12 @@ const SchemaJsonLd = () => {
     author: { '@id': `${podcastUrl}/#host` },
     publisher: { '@id': `${podcastUrl}/#organization` },
     sameAs,
-    webFeed: platformLinks.apple,
+    webFeed: siteConfig.rssFeedUrl,
   }
 
-  type EpisodeLike = {
-    slug?: string
-    id?: number
-    number?: number
-    title: string
-    description: string
-    date: string
-    duration: string
-    audioUrl?: string
-  }
-  const allEpisodes: EpisodeLike[] =
-    episodes && episodes.length > 0 ? (episodes as unknown as EpisodeLike[]) : [episode as EpisodeLike]
-  const podcastEpisodes = allEpisodes.map((ep, idx) => {
+  const allEpisodes = await getAllEpisodes()
+  const schemaEpisodes: SchemaEpisode[] = allEpisodes.length > 0 ? allEpisodes : [episode as SchemaEpisode]
+  const podcastEpisodes = schemaEpisodes.map((ep, idx) => {
     const slugPart = ep.slug || ep.id || ep.number || idx + 1
     return {
       '@context': 'https://schema.org',
@@ -64,7 +66,7 @@ const SchemaJsonLd = () => {
         ? {
             '@type': 'MediaObject',
             contentUrl: ep.audioUrl,
-            encodingFormat: 'audio/mpeg',
+            encodingFormat: ep.audioType || 'audio/mpeg',
           }
         : undefined,
     }

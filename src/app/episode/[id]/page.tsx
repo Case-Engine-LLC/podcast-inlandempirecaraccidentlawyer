@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
+import { notFound } from 'next/navigation'
 import V1EpisodePage from '@/themes/v1/pages/V1EpisodePage'
+import { siteConfig } from '@/data/siteData'
 import { getAllEpisodes, getEpisodeByIdOrSlug, getEpisodeTranscript } from '@/lib/data'
 
 export const revalidate = 3600
@@ -26,6 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     : episode.description
   const imageUrl = episode.logo || 'https://inlandinjury.com/Hero.jpg'
   const canonicalPath = `/episode/${episode.slug ?? episode.id}`
+  const podcastUrl = siteConfig.podcastUrl.replace(/\/$/, '')
 
   return {
     title: `${episode.title} | Inland Empire Car and Truck Accident Law w. Deborah Song`,
@@ -36,7 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     openGraph: {
       title: episode.title,
       description,
-      url: `https://inlandinjury.com${canonicalPath}`,
+      url: `${podcastUrl}${canonicalPath}`,
       siteName: 'Inland Empire Car and Truck Accident Law w. Deborah Song',
       type: 'article',
       images: [{ url: imageUrl, width: 1200, height: 630, alt: episode.title }],
@@ -54,7 +57,9 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
   const { id } = await params
   const allEpisodes = await getAllEpisodes()
   const episode = await getEpisodeByIdOrSlug(id)
-  const transcript = episode ? await getEpisodeTranscript(episode) : []
+  if (!episode) notFound()
+
+  const transcript = await getEpisodeTranscript(episode)
 
   return (
     <V1EpisodePage

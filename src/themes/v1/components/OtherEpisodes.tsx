@@ -74,9 +74,9 @@ const OtherEpisodes = ({ episodes: propEpisodes }: OtherEpisodesProps) => {
               transform: `translateX(-${currentIndex * (100 / 3)}%)`
             }}
           >
-            {episodes.map((episode) => (
+            {episodes.map((episode, index) => (
               <Link
-                key={episode.id}
+                key={`${episode.id}-${index}`}
                 href={episode.id.startsWith('coming') ? '#subscribe' : `/episode/${(episode as { slug?: string }).slug ?? episode.id}`}
                 className="group flex flex-col flex-shrink-0 w-full md:w-[calc(33.333%-1rem)]"
               >

@@ -68,7 +68,7 @@ const Hero = ({ latestEpisode }: HeroProps) => {
       {/* Hero Content */}
       <div className="relative z-[2] max-w-container mx-auto px-4 md:px-12 pt-6 md:pt-12 pb-0 md:pb-12">
         {/* Text Content */}
-        <div className="md:w-[55%] pb-6 md:pb-16 text-center md:text-left">
+        <div className="md:w-[66%] pb-6 md:pb-16 text-center md:text-left">
           {/* Heading */}
           <h1 className="text-[2.25rem] leading-[1.2] md:text-5xl font-bold md:leading-tighter text-white mb-3 md:mb-4">
             {content.heroTitle}

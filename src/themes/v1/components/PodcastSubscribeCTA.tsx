@@ -29,7 +29,7 @@ const PodcastSubscribeCTA = () => {
                 <img
                   src="/cta-subject.png"
                   alt="Attorneys"
-                  className="w-full max-w-[450px] md:max-w-[420px] h-auto object-contain"
+                  className="w-full max-w-[320px] md:max-w-[300px] h-auto object-contain"
                 />
               </div>
 

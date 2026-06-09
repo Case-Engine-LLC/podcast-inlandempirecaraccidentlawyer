@@ -123,8 +123,8 @@ const LatestEpisodes = ({ episodes: propEpisodes }: LatestEpisodesProps) => {
         {viewMode === 'list' && (
           <div className="relative">
             <div className="space-y-0">
-            {visibleEpisodes.map((episode) => (
-              <div key={episode.id} className="relative">
+            {visibleEpisodes.map((episode, index) => (
+              <div key={`${episode.id}-${index}`} className="relative">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 py-8 md:py-12 items-center">
                   {/* Episode Image */}
                   <div className="md:col-span-4">
@@ -212,8 +212,8 @@ const LatestEpisodes = ({ episodes: propEpisodes }: LatestEpisodesProps) => {
                 </tr>
               </thead>
               <tbody>
-                {visibleEpisodes.map((episode) => (
-                  <tr key={episode.id} className="border-b border-white/5 hover:bg-white/5 transition-colors">
+                {visibleEpisodes.map((episode, index) => (
+                  <tr key={`${episode.id}-${index}`} className="border-b border-white/5 hover:bg-white/5 transition-colors">
                     <td className="py-5 pr-4 text-base font-bold text-white/30">{episode.number}</td>
                     <td className="py-5 pr-4">
                       <Link href={`/episode/${(episode as { slug?: string }).slug ?? episode.id}`} className="hover:opacity-80">

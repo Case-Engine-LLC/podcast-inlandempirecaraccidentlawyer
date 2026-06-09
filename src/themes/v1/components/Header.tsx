@@ -45,6 +45,8 @@ const Header = ({ variant = 'dark' }: HeaderProps) => {
             <Link
               key={index}
               href={item.href.startsWith('#') ? `/${item.href}` : item.href}
+              target={item.external ? '_blank' : undefined}
+              rel={item.external ? 'noopener noreferrer' : undefined}
               className={`text-base font-medium ${textColor} ${textHoverColor} transition-colors`}
             >
               {item.name}
@@ -56,6 +58,8 @@ const Header = ({ variant = 'dark' }: HeaderProps) => {
         <div className="hidden md:flex items-center">
           <Link
             href={navigation.ctaHref.startsWith('#') ? `/${navigation.ctaHref}` : navigation.ctaHref}
+            target={/^https?:\/\//.test(navigation.ctaHref) ? '_blank' : undefined}
+            rel={/^https?:\/\//.test(navigation.ctaHref) ? 'noopener noreferrer' : undefined}
             className={`px-6 py-2.5 rounded-lg text-base font-semibold ${buttonBg} transition-all`}
           >
             {navigation.ctaText}
@@ -78,6 +82,8 @@ const Header = ({ variant = 'dark' }: HeaderProps) => {
             <Link
               key={index}
               href={item.href.startsWith('#') ? `/${item.href}` : item.href}
+              target={item.external ? '_blank' : undefined}
+              rel={item.external ? 'noopener noreferrer' : undefined}
               className={`text-lg font-medium ${textColor}`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -86,6 +92,8 @@ const Header = ({ variant = 'dark' }: HeaderProps) => {
           ))}
           <Link
             href={navigation.ctaHref.startsWith('#') ? `/${navigation.ctaHref}` : navigation.ctaHref}
+            target={/^https?:\/\//.test(navigation.ctaHref) ? '_blank' : undefined}
+            rel={/^https?:\/\//.test(navigation.ctaHref) ? 'noopener noreferrer' : undefined}
             className={`flex items-center justify-center px-6 py-3 rounded-lg text-base font-semibold ${buttonBg}`}
             onClick={() => setIsMenuOpen(false)}
           >

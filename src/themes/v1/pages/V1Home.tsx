@@ -4,7 +4,6 @@ import React from 'react'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import TrustBadges from '../components/TrustBadges'
-import StatsBanner from '../components/StatsBanner'
 import About from '../components/About'
 import PodcastTeam from '../components/PodcastTeam'
 import LatestEpisodes from '../components/LatestEpisodes'
@@ -235,7 +234,6 @@ const V1Home = ({ episodes }: V1HomeProps) => {
       <main>
         <Hero latestEpisode={episodes?.[0]} />
         <TrustBadges />
-        <StatsBanner />
         <About />
         <PodcastTeam />
         <LatestEpisodes episodes={episodes} />

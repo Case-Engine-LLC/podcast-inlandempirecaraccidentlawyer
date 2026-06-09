@@ -20,7 +20,7 @@ const SITE_URL =
 // Meta/SEO title — "Podcast" inserted before the host (e.g. "Inland Empire
 // Car and Truck Accident Law Podcast w. Deborah Song"). Visible on-page
 // headings use siteConfig.podcastName directly and are unaffected.
-const META_TITLE = siteConfig.podcastName.replace(' w. ', ' Podcast w. ')
+const META_TITLE = siteConfig.podcastName.replace(' w. ', ' Podcast with ')
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

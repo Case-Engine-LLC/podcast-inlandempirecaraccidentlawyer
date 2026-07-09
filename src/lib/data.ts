@@ -1,5 +1,5 @@
 import { fetchPodcastFeed, fetchTranscript as fetchRssTranscript, type RSSEpisode, type TranscriptSegment } from './rss'
-import { generatedTranscripts } from '@/data/transcripts.generated'
+import { generatedTranscripts, TRANSCRIPTS_BY_GUID } from '@/data/transcripts.generated'
 import { episodes as staticEpisodes, siteConfig } from '@/data/siteData'
 
 // Prefer env var (Vercel project setting), fall back to siteData.rssFeedUrl
@@ -158,13 +158,26 @@ export async function getEpisodeByIdOrSlug(idOrSlug: string): Promise<Episode | 
 }
 
 export async function getEpisodeTranscript(episode: Episode): Promise<TranscriptSegment[]> {
+  const episodeGuid = episode.guid || episode.sourceGuid || episode.rssGuid
+
   if (!RSS_URL) {
+    if (episodeGuid && TRANSCRIPTS_BY_GUID[episodeGuid]) {
+      return TRANSCRIPTS_BY_GUID[episodeGuid]
+    }
     return generatedTranscripts[episode.id] ?? []
   }
 
   if (episode.transcriptUrl && episode.transcriptType) {
     const segments = await fetchRssTranscript(episode.transcriptUrl, episode.transcriptType)
     if (segments.length > 0) return segments
+  }
+
+  // Location-cut episodes (e.g. the Norco extensions of Ep2/Ep3/Ep4) share the
+  // same itunes:episode number as their Inland Empire counterparts, so
+  // episode.id collides on the RSS path — resolve by guid first, which is
+  // unique per feed item, before falling back to id.
+  if (episodeGuid && TRANSCRIPTS_BY_GUID[episodeGuid]) {
+    return TRANSCRIPTS_BY_GUID[episodeGuid]
   }
 
   // Serve the staged transcript for ANY episode that has one (was gated to ep1).

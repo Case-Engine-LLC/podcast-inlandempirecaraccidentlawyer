@@ -3,7 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react'
-import { footer, episodes as episodesData, contact } from '@/data/siteData'
+import { footer, episodes as episodesData, contact, siteConfig } from '@/data/siteData'
 import type { Episode } from '@/lib/data'
 
 const XIcon = ({ size = 20, className = '' }: { size?: number; className?: string }) => (
@@ -28,10 +28,18 @@ const Footer = ({ episodes }: FooterProps) => {
   const currentYear = new Date().getFullYear()
 
   const sourceEpisodes = episodes ?? episodesData
-  const epList = (sourceEpisodes as Array<{ id: number | string; number?: number; title: string; slug?: string }>).map(ep => ({
-    name: `Episode ${ep.number ?? ep.id}: ${(ep.title || '').split(':')[0]}`,
+  const epList = (sourceEpisodes as Array<{ id: number | string; number?: number; title: string; slug?: string }>).map((ep, index, allEpisodes) => ({
+    name: `Episode ${allEpisodes.length - index}: ${(ep.title || '').split(':')[0]}`,
     href: `/episode/${ep.slug ?? ep.id}`,
   }))
+
+  const socialLinks = [
+    { href: footer.socialLinks.twitter, label: 'X', icon: <XIcon size={20} className="text-white" /> },
+    { href: footer.socialLinks.linkedin, label: 'LinkedIn', icon: <Linkedin size={20} className="text-white" /> },
+    { href: footer.socialLinks.facebook, label: 'Facebook', icon: <Facebook size={20} className="text-white" /> },
+    { href: footer.socialLinks.instagram, label: 'Instagram', icon: <Instagram size={20} className="text-white" /> },
+    { href: footer.socialLinks.youtube, label: 'YouTube', icon: <Youtube size={20} className="text-white" /> },
+  ].filter((social) => Boolean(social.href))
 
   return (
     <footer className="bg-[#0a0a1a] text-white">
@@ -59,21 +67,16 @@ const Footer = ({ episodes }: FooterProps) => {
               {footer.description}
             </p>
             <div className="flex items-center gap-4">
-              <Link href={footer.socialLinks.twitter} className="hover:opacity-70 transition-opacity">
-                <XIcon size={20} className="text-white" />
-              </Link>
-              <Link href={footer.socialLinks.linkedin} className="hover:opacity-70 transition-opacity">
-                <Linkedin size={20} className="text-white" />
-              </Link>
-              <Link href={footer.socialLinks.facebook} className="hover:opacity-70 transition-opacity">
-                <Facebook size={20} className="text-white" />
-              </Link>
-              <Link href={footer.socialLinks.instagram} className="hover:opacity-70 transition-opacity">
-                <Instagram size={20} className="text-white" />
-              </Link>
-              <Link href={footer.socialLinks.youtube} className="hover:opacity-70 transition-opacity">
-                <Youtube size={20} className="text-white" />
-              </Link>
+              {socialLinks.map((social) => (
+                <Link
+                  key={social.label}
+                  href={social.href}
+                  aria-label={social.label}
+                  className="hover:opacity-70 transition-opacity"
+                >
+                  {social.icon}
+                </Link>
+              ))}
             </div>
           </div>
 
@@ -102,7 +105,7 @@ const Footer = ({ episodes }: FooterProps) => {
             © {currentYear} {footer.copyright}. All rights reserved.
           </p>
           <div className="flex items-center justify-center gap-4 mt-2">
-            <Link href={`${contact.website.replace(/\/$/, '')}/privacy-policy/`} target="_blank" rel="noopener noreferrer" className="text-xs text-white/40 underline hover:text-white/60">Privacy Policy</Link>
+            <Link href={`${siteConfig.firmUrl.replace(/\/$/, '')}/disclaimer/`} target="_blank" rel="noopener noreferrer" className="text-xs text-white/40 underline hover:text-white/60">Privacy &amp; Legal Disclaimer</Link>
             <span className="text-xs text-white/20">|</span>
             <Link href={contact.website} target="_blank" rel="noopener noreferrer" className="text-xs text-white/40 underline hover:text-white/60">{contact.website.replace('https://', '')}</Link>
             <span className="text-xs text-white/20">|</span>

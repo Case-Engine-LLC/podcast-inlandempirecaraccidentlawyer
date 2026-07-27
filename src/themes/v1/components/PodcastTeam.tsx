@@ -70,23 +70,67 @@ const PodcastTeam = () => {
       <div className="relative z-10 max-w-container mx-auto px-6 md:px-12">
         {/* Mobile Slider */}
         <div className="md:hidden relative">
-          <div className="w-full flex justify-center items-end relative overflow-hidden">
-            <img
-              key={currentSlide}
-              src={teamMembers[currentSlide].image}
-              alt={teamMembers[currentSlide].name}
-              className="w-full h-auto object-contain"
-              style={{
-                animation: direction === 'right'
-                  ? 'slideInRight 0.5s ease-out'
-                  : 'slideInLeft 0.5s ease-out'
-              }}
-            />
+          <div className="w-full">
+            <div className="relative overflow-hidden">
+              <img
+                key={currentSlide}
+                src={teamMembers[currentSlide].image}
+                alt={teamMembers[currentSlide].name}
+                className="w-full h-auto object-contain"
+                style={{
+                  animation: direction === 'right'
+                    ? 'slideInRight 0.5s ease-out'
+                    : 'slideInLeft 0.5s ease-out'
+                }}
+              />
+
+              {/* Navigation Arrows */}
+              <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-4 z-20">
+                <button
+                  onClick={prevSlide}
+                  className="w-12 h-12 rounded-full bg-black hover:bg-gray-800 text-white flex items-center justify-center transition-colors"
+                  aria-label="Previous"
+                >
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 19l-7-7 7-7"
+                    />
+                  </svg>
+                </button>
+                <button
+                  onClick={nextSlide}
+                  className="w-12 h-12 rounded-full bg-black hover:bg-gray-800 text-white flex items-center justify-center transition-colors"
+                  aria-label="Next"
+                >
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
 
             {/* Card */}
             <div
               onClick={() => handleAuthorClick(teamMembers[currentSlide].slug)}
-              className="absolute bottom-20 left-4 right-4 bg-white rounded-2xl shadow-lg p-4 cursor-pointer hover:shadow-xl transition-shadow"
+              className="mt-4 bg-white rounded-2xl shadow-lg p-4 cursor-pointer hover:shadow-xl transition-shadow"
             >
               <div className="flex items-start justify-between mb-2">
                 <div className="flex items-center gap-2.5">
@@ -114,48 +158,6 @@ const PodcastTeam = () => {
               </div>
               <p className="text-gray-700 text-xs leading-relaxed">{teamMembers[currentSlide].bio}</p>
             </div>
-          </div>
-
-          {/* Navigation Arrows - Stay in place outside animated content */}
-          <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-4 z-20">
-            <button
-              onClick={prevSlide}
-              className="w-12 h-12 rounded-full bg-black hover:bg-gray-800 text-white flex items-center justify-center transition-colors"
-              aria-label="Previous"
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
-            </button>
-            <button
-              onClick={nextSlide}
-              className="w-12 h-12 rounded-full bg-black hover:bg-gray-800 text-white flex items-center justify-center transition-colors"
-              aria-label="Next"
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </button>
           </div>
         </div>
 

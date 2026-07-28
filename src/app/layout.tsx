@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     template: `%s | ${META_TITLE}`,
   },
   description: about.description,
+  verification: {
+    google: 'UvGyNzThsPxqp12bb8o-E4NXYDS2iMdUF0IOO7DYOwo',
+  },
   applicationName: META_TITLE,
   authors: [{ name: attorney.name, url: contact.website || SITE_URL }],
   keywords: [

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import { MarkerWidget } from '@/components/MarkerWidget'
+import { Analytics } from '@/components/Analytics'
 import SchemaJsonLd from '@/components/SchemaJsonLd'
 import { siteConfig, about, attorney, contact } from '@/data/siteData'
 import './globals.css'
@@ -116,6 +117,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         {children}
+        <Analytics />
         <MarkerWidget />
       </body>
     </html>

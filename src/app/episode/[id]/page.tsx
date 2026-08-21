@@ -31,7 +31,9 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const podcastUrl = siteConfig.podcastUrl.replace(/\/$/, '')
 
   return {
-    title: `${episode.title} | Inland Empire Car and Truck Accident Law w. Deborah Song`,
+    // Bare episode title only — layout's `template: '%s | <brand>'` appends the
+    // podcast name. Including it here too rendered it twice.
+    title: episode.title,
     description,
     alternates: {
       canonical: canonicalPath,

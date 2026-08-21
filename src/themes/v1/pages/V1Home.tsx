@@ -62,25 +62,7 @@ const homeSchema = {
         "https://inlandinjury.com/"
       ]
     },
-    {
-      "@type": "WebSite",
-      "@id": "https://podcast-inlandempirecaraccidentlawy.vercel.app/#website",
-      "url": "https://podcast-inlandempirecaraccidentlawy.vercel.app/",
-      "name": "Empire Law Firm with Deborah Song",
-      "description": "A podcast by Deborah Song of Empire Attorneys / Inland Injury helping Inland Empire residents understand California personal injury law.",
-      "publisher": {
-        "@id": "https://inlandinjury.com/#org"
-      },
-      "inLanguage": "en-US",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://podcast-inlandempirecaraccidentlawy.vercel.app/?s={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      }
-    },
+    
     {
       "@type": "WebPage",
       "@id": "https://podcast-inlandempirecaraccidentlawy.vercel.app/#webpage",
@@ -115,43 +97,7 @@ const homeSchema = {
         ]
       }
     },
-    {
-      "@type": "PodcastSeries",
-      "@id": "https://podcast-inlandempirecaraccidentlawy.vercel.app/#podcast",
-      "name": "Empire Law Firm with Deborah Song",
-      "description": "Empire Law Firm with Deborah Song covers Inland Empire personal injury — car, motorcycle, truck, and catastrophic injury cases — with Orange County-level trial preparation brought back to Riverside and San Bernardino Counties.",
-      "url": "https://podcast-inlandempirecaraccidentlawy.vercel.app/",
-      "image": "https://podcast-inlandempirecaraccidentlawy.vercel.app/Hero.jpg",
-      "author": {
-        "@type": "Person",
-        "@id": "https://podcast-inlandempirecaraccidentlawy.vercel.app/#host",
-        "name": "Deborah Song",
-        "givenName": "Deborah",
-        "familyName": "Song",
-        "jobTitle": "Founder & Personal Injury Trial Attorney",
-        "image": "https://podcast-inlandempirecaraccidentlawy.vercel.app/headshot-deborah-song.avif",
-        "worksFor": {
-          "@id": "https://inlandinjury.com/#org"
-        },
-        "sameAs": [
-          "https://inlandinjury.com/"
-        ],
-        "alumniOf": {
-          "@type": "EducationalOrganization",
-          "name": "Western State University College of Law"
-        }
-      },
-      "webFeed": [],
-      "genre": [
-        "Legal",
-        "Personal Injury Law",
-        "Education"
-      ],
-      "inLanguage": "en-US",
-      "publisher": {
-        "@id": "https://inlandinjury.com/#org"
-      }
-    },
+    
     {
       "@type": "FAQPage",
       "@id": "https://podcast-inlandempirecaraccidentlawy.vercel.app/#faq",

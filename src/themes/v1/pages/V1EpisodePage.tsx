@@ -156,13 +156,7 @@ export function generateEpisodeSchema(episode: Episode | null | undefined) {
           ],
         },
       },
-      {
-        '@type': 'PodcastSeries',
-        '@id': `${podcastUrl}/#podcast`,
-        name: siteConfig.podcastName,
-        url: `${podcastUrl}/`,
-        webFeed: siteConfig.rssFeedUrl,
-      },
+      
       {
         '@type': 'PodcastEpisode',
         '@id': `${podcastUrl}${canonicalPath}#episode`,

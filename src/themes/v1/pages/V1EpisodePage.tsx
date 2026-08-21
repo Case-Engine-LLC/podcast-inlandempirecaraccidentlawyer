@@ -1,4 +1,5 @@
 import React from 'react'
+import { toIsoDuration } from '@/components/SchemaJsonLd'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import EpisodeHero from '../components/EpisodeHero'
@@ -170,7 +171,7 @@ export function generateEpisodeSchema(episode: Episode | null | undefined) {
         episodeNumber: episode.number,
         url: `${podcastUrl}${canonicalPath}`,
         image: episode.logo || `${podcastUrl}/cover.jpg`,
-        timeRequired: episode.duration,
+        timeRequired: toIsoDuration(episode.duration),
         partOfSeries: { '@id': `${podcastUrl}/#podcast` },
         associatedMedia: episode.audioUrl
           ? {

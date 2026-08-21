@@ -29,7 +29,7 @@ type SchemaEpisode = {
 // arrive as "36 min", "51:09", "01:20:59", seconds, or the placeholder "TBD";
 // anything unparseable returns undefined so the key is dropped rather than
 // emitting an invalid value.
-function toIsoDuration(raw: unknown): string | undefined {
+export function toIsoDuration(raw: unknown): string | undefined {
   if (raw === undefined || raw === null) return undefined
   const s = String(raw).trim()
   if (!s || /^tbd$/i.test(s)) return undefined

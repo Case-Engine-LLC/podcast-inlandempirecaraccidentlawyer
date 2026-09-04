@@ -6,6 +6,7 @@ import SchemaJsonLd from '@/components/SchemaJsonLd'
 import { siteConfig, about, attorney, contact } from '@/data/siteData'
 import './globals.css'
 import '@/themes/v1/variables.css'
+import { AgentTools } from '@/components/AgentTools'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -119,6 +120,7 @@ export default function RootLayout({
         {children}
         <Analytics />
         <MarkerWidget />
+        <AgentTools />
       </body>
     </html>
   )

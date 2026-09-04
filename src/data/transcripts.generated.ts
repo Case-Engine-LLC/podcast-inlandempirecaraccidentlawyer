@@ -35,7 +35,7 @@
  * source sheet/docs first. */
 import type { TranscriptSegment } from '@/lib/rss'
 
-export const generatedTranscripts: Record<number, TranscriptSegment[]> = {
+export const generatedTranscripts: Record<string, TranscriptSegment[]> = {
   1: [
     { timestamp: "00:00", speaker: "Abby", text: "Welcome to our very first episode of Empire Law Firm with Deborah Song, the podcast about personal injury and car accidents serving Inland Empire in California. I'm Abby, and today we're doing something special. We're going to explore the expertise and background of our co-host and expert attorney Deborah Song in what we affectionately call the You Interview. We want to get to know how Deborah Song became Deborah Song, the founder of the Inland Empire based law firm, Empire Law Firm. That's exactly what we're here to explore today. Deborah, thank you so much for being here." },
     { timestamp: "00:00", speaker: "Deborah", text: "Thank you for having me." },

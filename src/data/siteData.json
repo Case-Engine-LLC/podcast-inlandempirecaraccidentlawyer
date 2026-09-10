@@ -35,7 +35,7 @@
     "photo": "/images/attorney.jpg"
   },
   "contact": {
-    "address": "Eastvale, California — serving the Inland Empire, Orange County, and statewide California",
+    "address": "Eastvale, California (serving the Inland Empire, Orange County, and statewide California)",
     "phone": "(951) 456-3891",
     "email": "deborah@inlandinjury.com",
     "website": "https://inlandinjury.com"
@@ -272,13 +272,13 @@
     "description": "Empire Attorneys was founded by Deborah Song to bring Orange County-style personal injury representation back to the Inland Empire community she grew up in. The firm operates from Eastvale and Norco, represents clients across California, and takes identity-theft consumer protection cases nationally under federal law. Deborah is admitted to the State Bar of California (Bar No. 337172), a peer-nominated Super Lawyers Rising Star, and by her own account, the only full-time personal injury attorney practicing in Norco and Eastvale.",
     "highlights": [
       "$50M+ recovered for injured Californians (Deborah Song, career total)",
-      "Super Lawyers Rising Star — peer-nominated (Deborah Song; Phillip B. Nghiem 2022–2023)",
+      "Super Lawyers Rising Star, peer-nominated (Deborah Song; Phillip B. Nghiem 2022–2023)",
       "$52.9M verdict in 2022 (trial team including Of Counsel Phillip B. Nghiem)",
       "Only full-time personal injury attorney operating in Norco and Eastvale",
-      "Dedicated property-damage department — diminution in value, loss of use, GAP coordination",
+      "Dedicated property-damage department (diminution in value, loss of use, GAP coordination)",
       "Bilingual outreach through the Hispanic Bar Association of the Inland Empire and Mexican Bar Association",
       "Trained at OCBA College of Trial Advocacy and Trial Lawyers University",
-      "Free consultation; contingency fee — no recovery, no fee"
+      "Free consultation; contingency fee (no recovery, no fee)"
     ],
     "showReadMore": false
   },
@@ -289,7 +289,7 @@
       "Super Lawyers Rising Star perspective on real Inland Empire case strategy",
       "Uninsured/underinsured motorist coverage and California-specific insurance issues",
       "Diminution in value, loss of use, and GAP coordination, what most firms skip",
-      "Negotiation vs. litigation — how Empire Attorneys makes the call with the client",
+      "Negotiation vs. litigation, how Empire Attorneys makes the call with the client",
       "AI in legal practice and the Uber-backed California fee-cap legislation"
     ]
   },
@@ -356,13 +356,13 @@
         "links": [
           {
             "title": "Car Accident Lawyers",
-            "description": "Empire Attorneys represents drivers and passengers injured in serious Inland Empire collisions — roughly 95% of the firm's caseload.",
+            "description": "Empire Attorneys represents drivers and passengers injured in serious Inland Empire collisions, roughly 95% of the firm's caseload.",
             "href": "https://www.empireatty.com/what-does-a-car-accident-attorney-do/",
             "image": "/topical/icon-pa-car.svg"
           },
           {
             "title": "Truck Accident Lawyers",
-            "description": "Commercial trucking cases involve federal motor carrier regulations and multiple corporate defendants — Deborah Song litigates them aggressively.",
+            "description": "Commercial trucking cases involve federal motor carrier regulations and multiple corporate defendants. Deborah Song litigates them aggressively.",
             "href": "https://www.empireatty.com/inland-empire-truck-accident-lawyer/",
             "image": "/topical/icon-pa-truck.svg"
           },
@@ -665,7 +665,7 @@
       ],
       "bio": [
         "Phillip B. Nghiem is Of Counsel to Empire Attorneys and is admitted to the State Bar of California (Bar No. 291525). He was part of the trial team that secured a $52.9 million verdict in 2022 and has separately negotiated a $1.3 million settlement on behalf of injured Californians. Past results do not guarantee a similar outcome in any future case.",
-        "Phillip has been peer-nominated as a Super Lawyers Rising Star in 2022 and 2023 — recognition limited to approximately 2.5% of eligible California attorneys. He trained through the OCBA College of Trial Advocacy and Trial Lawyers University and joins Empire Attorneys on select trial matters, particularly complex insurance bad-faith and catastrophic-injury cases. TODO: confirm education and full admissions history with the firm before launch."
+        "Phillip has been peer-nominated as a Super Lawyers Rising Star in 2022 and 2023, recognition limited to approximately 2.5% of eligible California attorneys. He trained through the OCBA College of Trial Advocacy and Trial Lawyers University and joins Empire Attorneys on select trial matters, particularly complex insurance bad-faith and catastrophic-injury cases. TODO: confirm education and full admissions history with the firm before launch."
       ],
       "memberships": [
         "State Bar of California"
